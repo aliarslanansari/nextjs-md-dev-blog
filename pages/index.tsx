@@ -5,6 +5,7 @@ import matter from "gray-matter";
 import Head from "next/head";
 import { IPost } from "../app/interfaces/pages/Home";
 import Post from "../app/components/Post";
+import { sortByDate } from "../app/utils/common";
 
 interface HomePropsTypes {
   posts: IPost[];
@@ -37,7 +38,7 @@ export const getStaticProps: GetStaticProps = async () => {
   });
   return {
     props: {
-      posts
+      posts: posts.sort(sortByDate)
     }
   };
 };

@@ -9,3 +9,7 @@ export interface IPost {
   slug: string;
   frontMatter: FrontMatter;
 }
+
+export interface IPostWithContent extends IPost {
+  content: string;
+}
