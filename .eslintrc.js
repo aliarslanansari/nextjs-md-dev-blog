@@ -29,6 +29,7 @@ module.exports = {
     "no-console": ["error", { allow: ["error"] }],
     semi: ["error", "always"],
     "@next/next/no-img-element": "off",
+    "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"
   },
   globals: {
