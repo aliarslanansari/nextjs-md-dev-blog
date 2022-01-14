@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module"
   },
-  plugins: ["react", "@typescript-eslint", "simple-import-sort"],
+  plugins: ["react", "@typescript-eslint"],
   // 'rules' to add or remove checks
   rules: {
     "react/react-in-jsx-scope": "off",
@@ -28,9 +28,7 @@ module.exports = {
     "prefer-const": "error",
     "no-console": ["error", { allow: ["error"] }],
     semi: ["error", "always"],
-    "@next/next/no-img-element": "off",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "@next/next/no-img-element": "warn"
   },
   globals: {
     GLOBAL: false,
