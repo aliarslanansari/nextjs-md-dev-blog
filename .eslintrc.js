@@ -28,7 +28,7 @@ module.exports = {
     "prefer-const": "error",
     "no-console": ["error", { allow: ["error"] }],
     semi: ["error", "always"],
-    "@next/next/no-img-element": "warn"
+    "@next/next/no-img-element": "off"
   },
   globals: {
     GLOBAL: false,
